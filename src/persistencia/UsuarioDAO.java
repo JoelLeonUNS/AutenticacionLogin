@@ -2,6 +2,7 @@
 package persistencia;
 
 import dominio.Usuario;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UsuarioDAO extends DAO<Usuario> {
@@ -25,12 +26,17 @@ public class UsuarioDAO extends DAO<Usuario> {
 
     @Override
     public Usuario read(int id) {
-        return null;
+        return BD.getUsuarios().get(id);
     }
 
     @Override
     public List<Usuario> listed() {
-        return null;
+        List<Usuario> listaUsuarios = new ArrayList<>();
+        
+        for (int i = 0; i < BD.getUsuarios().size(); i++) {
+            listaUsuarios.add(read(i));
+        }        
+        return listaUsuarios;
     }
 
 }
