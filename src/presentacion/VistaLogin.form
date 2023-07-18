@@ -91,7 +91,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\USUARIO\OneDrive\ESTUDIO\UNS\6&#xb0; Ciclo\ARQUITECTURA DE SOFTWARE EMPRESARIAL\Semana 06\GestionHistorial\src\imagenes\usuario.png"/>
+              <Image iconType="3" name="/img/usuario.png"/>
             </Property>
           </Properties>
         </Component>

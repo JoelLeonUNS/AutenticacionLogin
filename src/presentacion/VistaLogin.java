@@ -58,7 +58,7 @@ public class VistaLogin extends javax.swing.JFrame {
         pnl_login.setPreferredSize(new java.awt.Dimension(450, 540));
 
         lbl_fotoSesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_fotoSesion.setIcon(new javax.swing.ImageIcon("C:\\Users\\USUARIO\\OneDrive\\ESTUDIO\\UNS\\6° Ciclo\\ARQUITECTURA DE SOFTWARE EMPRESARIAL\\Semana 06\\GestionHistorial\\src\\imagenes\\usuario.png")); // NOI18N
+        lbl_fotoSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
 
         lbl_usuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbl_usuario.setText("Usuario");
