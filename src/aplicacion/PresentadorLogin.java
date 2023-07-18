@@ -18,7 +18,7 @@ public class PresentadorLogin implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
-            case "INICIAR SESION" -> {
+            case "INICIAR SESIÓN" -> {
                 this.setDatosModelo(vLogin.getUsuario(), vLogin.getClave());
                 modelo.iniciarSesion();
                 if (modelo.isAcceso()) {

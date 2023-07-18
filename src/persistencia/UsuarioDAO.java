@@ -10,7 +10,7 @@ public class UsuarioDAO extends DAO<Usuario> {
     @Override
     public Usuario create(Usuario obj) {
         BD.getUsuarios().put(BD.IdUsuario(), obj);
-        System.out.println("Usuario creado: " + obj.getUsuario());
+        System.out.println("Usuario creado: " + obj.getUsuario() + "  |  " + obj.getClave());
         return obj;
     }
 
