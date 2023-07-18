@@ -23,6 +23,7 @@ public class VistaLogin extends javax.swing.JFrame {
     
      public void iniciar() {
         pack();
+         setTitle("Autenticación de Usuario");
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
@@ -45,7 +46,6 @@ public class VistaLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         pnl_login = new javax.swing.JPanel();
-        lbl_fotoSesion = new javax.swing.JLabel();
         lbl_usuario = new javax.swing.JLabel();
         txtFld_usuario = new javax.swing.JTextField();
         lbl_clave = new javax.swing.JLabel();
@@ -56,9 +56,6 @@ public class VistaLogin extends javax.swing.JFrame {
 
         pnl_login.setBackground(new java.awt.Color(255, 255, 255));
         pnl_login.setPreferredSize(new java.awt.Dimension(450, 540));
-
-        lbl_fotoSesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_fotoSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
 
         lbl_usuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbl_usuario.setText("Usuario");
@@ -83,7 +80,6 @@ public class VistaLogin extends javax.swing.JFrame {
             .addGroup(pnl_loginLayout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addGroup(pnl_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_fotoSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_usuario)
                     .addComponent(txtFld_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_clave)
@@ -93,9 +89,7 @@ public class VistaLogin extends javax.swing.JFrame {
         pnl_loginLayout.setVerticalGroup(
             pnl_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_loginLayout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(lbl_fotoSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addContainerGap(52, Short.MAX_VALUE)
                 .addComponent(lbl_usuario)
                 .addGap(10, 10, 10)
                 .addComponent(txtFld_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -103,8 +97,9 @@ public class VistaLogin extends javax.swing.JFrame {
                 .addComponent(lbl_clave)
                 .addGap(10, 10, 10)
                 .addComponent(psswrdFld_clave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(bttn_iniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(bttn_iniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -120,7 +115,7 @@ public class VistaLogin extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pnl_login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_login, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -143,7 +138,6 @@ public class VistaLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bttn_iniciarSesion;
     private javax.swing.JLabel lbl_clave;
-    private javax.swing.JLabel lbl_fotoSesion;
     private javax.swing.JLabel lbl_usuario;
     private javax.swing.JPanel pnl_login;
     private javax.swing.JPasswordField psswrdFld_clave;
